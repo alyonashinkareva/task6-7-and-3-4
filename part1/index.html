@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+
+    <label for="menu-toggle" class="menu-button">☰</label>
+
+    <div class="logo">
+        <label for="default-toggle" class="logo-link">Surf Coffee ®</label>
+    </div>
+</header>
+
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+<aside class="sidebar">
+    <label for="menu-toggle" class="close-button">×</label>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <label for="default-toggle" class="nav-link">ГЛАВНАЯ</label>
+            </li>
+            <li class="nav-item">
+                <label for="food-toggle" class="nav-link">МЕНЮ</label>
+            </li>
+            <li class="nav-item">
+                <label for="spots-toggle" class="nav-link">СПОТЫ</label>
+                <ul class="dropdown">
+                    <li><label for="spot1-toggle" class="dropdown-link">LEV TOLSTOY × SURF COFFEE®</label></li>
+                    <li><label for="spot2-toggle" class="dropdown-link">SOUL × SURF COFFEE®</label></li>
+                    <li><label for="spot3-toggle" class="dropdown-link">MDT × SURF COFFEE®</label></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <label for="license-toggle" class="nav-link">ЛИЦЕНЗИЯ СËРФЕРА</label>
+            </li>
+            <li class="nav-item">
+                <label for="contacts-toggle" class="nav-link">КОНТАКТЫ</label>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+<input type="radio" id="default-toggle" name="page-toggle" checked>
+<input type="radio" id="food-toggle" name="page-toggle">
+<input type="radio" id="spots-toggle" name="page-toggle">
+<input type="radio" id="license-toggle" name="page-toggle">
+<input type="radio" id="contacts-toggle" name="page-toggle">
+<input type="radio" id="spot1-toggle" name="page-toggle">
+<input type="radio" id="spot2-toggle" name="page-toggle">
+<input type="radio" id="spot3-toggle" name="page-toggle">
+
+<main class="content">
+    <section class="page default-page">
+        <h2>Почему Surf Coffee?</h2>
+        <p>Surf Coffee ® — это не просто кофейни.</p>
+        <p>Это место встречи и знакомств, объединяющее единомышленников.</p>
+
+        <div class="blocks-container">
+            <div class="block">
+                <h3>Вкусный кофе и не только</h3>
+                <p>
+                    Все кофейные напитки в Surf Coffee готовятся на фирменном зерне собственной обжарки,
+                    состав которого периодически обновляется. В меню — классические и авторские напитки,
+                    также бариста может приготовить кофе по индивидуальному заказу посетителя.
+                </p>
+                <label for="food-toggle" class="about-button">Посмотреть меню</label>
+            </div>
+
+            <div class="block">
+                <h3>Атмосфера</h3>
+                <p>
+                    Вы точно не перепутаете кофейню SC с чем-то другим. Наши кофейни поддерживают единый
+                    стиль, что позволяет создавать уют для наших гостей.
+                </p>
+                <label for="spots-toggle" class="about-button">Посмотреть на споты</label>
+            </div>
+
+\            <div class="block">
+                <h3>Лицензия серфера</h3>
+                <p>
+                    Часто бываешь у нас или много путешествуешь? Тогда у тебя точно есть лицензия серфера.
+                    Если нет, то ты можешь её получить во всех наших кофейнях.
+                </p>
+                <label for="license-toggle" class="about-button">Узнать больше о лицензии сёрфера</label>
+            </div>
+        </div>
+
+        <img src="img/sc_logo-tilted.png" alt="SC Logo" class="category-image">
+\        <label for="contacts-toggle" class="about-button">Связаться с нами</label>
+    </section>
+
+    <section class="page food-page">
+        <h1>Наше меню</h1>
+
+        <div class="menu-item">
+            <img src="img/latte.jpeg" alt="Латте" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Латте</h2>
+                <p>Молочно-кофейный напиток с преобладанием молочного вкуса.</p>
+                <p class="price">295 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/capuchino.jpeg" alt="Капучино" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Капучино</h2>
+                <p>Молочно-кофейный напиток с ярко выраженным вкусом эспрессо</p>
+                <p class="price">230 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/filtr.jpeg" alt="Фильтр" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Фильтр</h2>
+                <p>Чистый вкус кофе, приготовленного методом фильтрации.</p>
+                <p class="price">295 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/espresso.jpeg" alt="Эспрессо" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Эспрессо</h2>
+                <p>Крепкий кофейный напиток небольшого объёма без сахара и молока, приготовленный
+                в кофемашине под давлением, обладающий ярким и незабываемым вкусом.</p>
+                <p class="price">200 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/filtr.jpeg" alt="Фильтр-кофе" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Фильтр-кофе</h2>
+                <p>Мягкий по вкуса и быстрый в отдаче, обладающий разными вкусовыми оттенками, заложенными природой и обжарщиком,
+                которые раскрываются с помощью альтернативного способа приготовления через фильтр-машину.</p>
+                <p class="price">265 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/flet.jpeg" alt="Флэт-уайт" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Флэт-уайт</h2>
+                <p>Флэт-уайт - самый насыщенный по вкусу напиток на основе эспрессо</p>
+                <p class="price">265 ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/raf.jpeg" alt="Раф" class="menu-item-image">
+            <div class="menu-item-content">
+                <h2>Раф</h2>
+                <p>Воздушный кофейный напиток на основе сливок и эспрессо</p>
+                <p class="price">370 ₽</p>
+            </div>
+        </div>
+
+        <label for="default-toggle" class="about-button">На главную</label>
+    </section>
+
+    <section class="page spots-page">
+        <h1>Наши споты в Санкт-Петербурге</h1>
+        <p>Выберите спот, чтобы узнать о нем больше</p>
+
+        <div class="categories-list">
+            <label for="spot1-toggle" class="category-link">LEV TOLSTOY × SURF COFFEE®</label>
+            <label for="spot2-toggle" class="category-link">SOUL × SURF COFFEE®</label>
+            <label for="spot3-toggle" class="category-link">MDT × SURF COFFEE®</label>
+        </div>
+        <img src="img/sc_logo-tilted.png" alt="SC Logo" class="category-image">
+        <label for="default-toggle" class="about-button">На главную</label>
+    </section>
+
+    <section class="page spot1-page">
+        <h1 class="category-title">LEV TOLSTOY × SURF COFFEE®</h1>
+        <p class="category-description">
+            Surf Coffee® x Lev Tolstoy St — это место, где сочетаются уют и стиль вместе с искусством и историей.
+            Этот спот, расположенный в центре Санкт-Петербурга, теперь стал в два раза больше. Он уже с порога
+            привлекает внимание объёмным лайтбоксом на потолке, освещающим мягким тёплым светом.
+            Элегантные песочные шторы плавно обрамляют вход и создают ощущение погружения в атмосферу спокойствия и уюта.
+            В центре внимания — футуристичный бар, выполненный из камня, металла и терраццо.
+            А ещё в кофейне можно заметить встроенные стеллажи с продукцией Blue Hawaii Roast® и
+            SCPM — идеальное сочетание эстетики и функциональности. Особенное очарование добавляют старинный камин и большие распашные окна,
+            отсылающие к атмосфере уютных парижских кафе, через которые внутрь проникает дневной свет, делая место светлым и просторным.
+        </p>
+
+        <div class="info-table">
+            <div class="info-cell">
+                <h3>ВРЕМЯ РАБОТЫ</h3>
+                <p>Пн-Пт: 8.00–22.00</p>
+                <p>Сб-Вск: 9.00–22.00</p>
+            </div>
+            <div class="info-cell">
+                <h3>АДРЕС</h3>
+                <p>г. Санкт-Петербург,
+                    <br>
+                    ул. Льва Толстого 1-3
+                </p>
+            </div>
+            <div class="info-cell">
+                <h3>КОНТАКТЫ</h3>
+                <p>Т: <a class="contact-detail" href="tel:7(966)871-77-76">+7 (966) 871-77-76</a></p>
+                <p>Email: <a class="contact-detail" href="mailto:leo@surfteam.ru">leo@surfteam.ru</a></p>
+            </div>
+        </div>
+
+        <label for="spots-toggle" class="category-link">Ко всем спотам</label>
+        <img src="img/scxlev.JPG" alt="LEV TOLSTOY × SURF COFFEE®" class="category-image">
+    </section>
+
+    <section class="page spot2-page">
+        <h1 class="category-title">SOUL × SURF COFFEE®</h1>
+        <p class="category-description">Обстановка очень располагающая, расслабленная, уголок южного настроения в промозглом Петербурге.
+            Устраивайтесь поудобнее, послушайте классную музыку. Отведайте замечательного кофе. В нашем споте интерьер погрузит вас
+            в состояние нирваны, вам захочется на время отвлечься от реальности, забыться с кружечкой кофе, чтобы потом с новыми
+            силами ринуться в мир большого города.
+        </p>
+
+        <div class="info-table">
+            <div class="info-cell">
+                <h3>ВРЕМЯ РАБОТЫ</h3>
+                <p>Пн-Пт: 8:00-21:00</p>
+                <p>Сб-Вск: 10.00–21.00</p>
+            </div>
+            <div class="info-cell">
+                <h3>АДРЕС</h3>
+                <p>Санкт-Петербург,
+                    <br>
+                    средний пр. Васильевского острова 27
+                </p>
+            </div>
+            <div class="info-cell">
+                <h3>КОНТАКТЫ</h3>
+                <p>Т: <a class="contact-detail" href="tel:7(951)670-07-60">+7 (951) 670-07-60</a></p>
+                <p>Email: <a class="contact-detail" href="mailto:soul@surfteam.ru">soul@surfteam.ru</a></p>
+            </div>
+        </div>
+
+        <label for="spots-toggle" class="category-link">Ко всем спотам</label>
+        <img src="img/scxsoul.jpg" alt="SOUL × SURF COFFEE®2" class="category-image">
+    </section>
+
+    <section class="page spot3-page">
+        <h1 class="category-title">MDT × SURF COFFEE®</h1>
+        <p class="category-description">Своё название улица Рубинштейна обрела в 1929 году
+            в честь композитора Антона Григорьевича Рубинштейна, жившего в доме 38.
+            А с середины 2000-x годов улица застраивалась разными барами и кафе и получила
+            статус одной из самых ресторанных улиц Европы.
+            Среди разных заведений тут находится и кофейня Surf Coffee® x MDT, известная свежими
+            фирменными напитками из высокогорной арабики, крутой фанковой атмосферой от Surf Coffee®.
+            На споте много интересных интерьерных деталей - дизайнеры Surf® Hommie учли местоположение нового спота.
+            Спот обязателен к посещению перед отправлением в долгий ночной полет по Питеру,
+            который как правило начинается именно с улицы Рубенштейна.
+        </p>
+
+        <div class="info-table">
+            <div class="info-cell">
+                <h3>ВРЕМЯ РАБОТЫ</h3>
+                <p>Ежедневно: 10:00 - 22:00</p>
+            </div>
+            <div class="info-cell">
+                <h3>АДРЕС</h3>
+                <p>Санкт-Петербург,
+                    <br>
+                    Рубинштейна 9/3
+                </p>
+            </div>
+            <div class="info-cell">
+                <h3>КОНТАКТЫ</h3>
+                <p>Т: <a class="contact-detail" href="tel:7(991)046-97-09">+7 (991) 046-97-09</a></p>
+                <p>Email: <a class="contact-detail" href="mailto:mdt@surfcoffee.ru">mdt@surfcoffee.ru</a></p>
+            </div>
+        </div>
+
+        <label for="spots-toggle" class="category-link">Ко всем спотам</label>
+        <img src="img/scxmdt.jpg" alt="MDT × SURF COFFEE®" class="category-image">
+    </section>
+
+    <section class="page license-page">
+        <h1 class="license-title">SURFER LICENSE</h1>
+
+        <div class="license-text">
+            <div class="column">
+                <p>Часто бываешь у нас или много путешествуешь?</p>
+            </div>
+            <img src="img/license.png" alt="Лицензия сёрфера" class="license-image">
+            <div class="column">
+                <p>Тогда у тебя точно есть лицензия серфера.
+                    <br>
+                    Если нет, то ты можешь её получить во всех наших кофейнях.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-blocks">
+            <div class="info-block">
+                <h2>20% CASHBACK</h2>
+                <p>Накопленными баллами можно оплачивать до 100% покупок в кофейнях Surf Coffee®.</p>
+            </div>
+            <div class="info-block">
+                <h2>РАБОТАЕТ НА ВСЕХ СПОТАХ</h2>
+                <p>Лицензия действительна в каждой кофейне Surf Coffee®.</p>
+            </div>
+            <div class="info-block">
+                <h2>НАПИТОК В ДЕНЬ РОЖДЕНИЯ</h2>
+                <p>Выберите любой напиток в подарок при наличии лицензии.</p>
+            </div>
+            <div class="info-block">
+                <h2>БЕСПЛАТНЫЙ НАПИТОК ПЕРВОМУ ГОСТЮ</h2>
+                <p>Первый посетитель с лицензией получит любой напиток в подарок.</p>
+            </div>
+        </div>
+
+        <div class="license-form">
+            <h2>Получить лицензию</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+
+        <label for="default-toggle" class="about-button">На главную</label>
+    </section>
+
+    <section class="page contacts-page">
+        <div class="contacts-container">
+            <div class="contact-info">
+                <p>REGION: PARADISE</p>
+                <p>MAIL: <a href="mailto:hello@surfcoffee.ru">hello@surfcoffee.ru</a></p>
+            </div>
+
+            <div class="newsletter">
+                <h2>Рассылка</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Введите ваш email" required>
+                    <button type="submit">Получать рассылку</button>
+                </form>
+                <p class="disclaimer">
+                    Указывая свои данные, я соглашаюсь на условия обработки персональных данных и использования сайта в
+                    соответствии с <a href="#">Пользовательским соглашением</a>.
+                </p>
+            </div>
+        </div>
+
+        <label for="default-toggle" class="about-button">На главную</label>
+    </section>
+</main>
+</body>
+</html>
